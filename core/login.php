@@ -1,6 +1,7 @@
 <?php
-if(!define(BASEPATH)) exit ('No direct script access allowed');
-require_once '../../config/config.php';
+define('BASEPATH',true);
+//if(!define(BASEPATH)) exit ('No direct script access allowed');
+require_once '../config/config.php';
 require_once 'retrieve.php';
 try
 {
@@ -15,9 +16,9 @@ try
     {        
         if($key->username == $user && $key->password == $pass)
         {
-            header('Location:../../admin/view/pegawai.php');
+            header('Location:../user/ngadimin');
         }else{
-            header('Location:../admin/index.php');
+            header('Location:../page/login');
         }
         
     }

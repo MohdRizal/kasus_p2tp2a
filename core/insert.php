@@ -5,11 +5,11 @@ if ( ! defined('BASEPATH')) exit('No direct script access allowed');
     function insert($table,$data)
     {
         //include file konfigurasi
-        include '../../config/config.php';
-        //memisahkan isi array dengan tanda koma
+        include '../config/config.php';
+        //memisahkan isi array dengan kutip dan tanda koma
         $value = implode("', '",array_values($data));
         $key = implode(', ', array_keys($data));
-
+        //kueri
         $sql = "INSERT INTO $table($key) VALUES ('$value')";
         //eksekusi kueri
         $exec = $koneksi->prepare($sql);
@@ -24,7 +24,7 @@ if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
     function update($table, $data, $field, $kondisi)
     {
-        include '../../config/config.php';
+        include '../config/config.php';
 
         $value = implode("', '",array_values($data));
         $key = implode(', ', array_keys($data));

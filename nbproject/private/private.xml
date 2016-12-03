@@ -3,20 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/kasus/page/form/data_pelaku.php</file>
-            <file>file:/C:/xampp/htdocs/kasus/core/insert.php</file>
-            <file>file:/C:/xampp/htdocs/kasus/page/form/jenis_kasus.php</file>
-            <file>file:/C:/xampp/htdocs/kasus/page/form/intervensi.php</file>
-            <file>file:/C:/xampp/htdocs/kasus/page/form/data_pelapor.php</file>
-            <file>file:/C:/xampp/htdocs/kasus/core/login.php</file>
-            <file>file:/C:/xampp/htdocs/kasus/page/view/pegawai.php</file>
             <file>file:/C:/xampp/htdocs/kasus/page/form/pegawai.php</file>
+            <file>file:/C:/xampp/htdocs/kasus/core/insert.php</file>
             <file>file:/C:/xampp/htdocs/kasus/core/retrieve.php</file>
-            <file>file:/C:/xampp/htdocs/kasus/page/view/pelaku.php</file>
             <file>file:/C:/xampp/htdocs/kasus/index.php</file>
             <file>file:/C:/xampp/htdocs/kasus/page/form/operator.php</file>
-            <file>file:/C:/xampp/htdocs/kasus/page/view/korban.php</file>
-            <file>file:/C:/xampp/htdocs/kasus/page/form/data_korban.php</file>
+            <file>file:/C:/xampp/htdocs/kasus/page/view/pegawai.php</file>
         </group>
     </open-files>
 </project-private>
