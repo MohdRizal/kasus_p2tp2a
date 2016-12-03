@@ -29,11 +29,11 @@ include '../config/config.php';
         <header class="main-header">
 
             <!-- Logo -->
-            <a href="index2.html" class="logo">
+            <a href="#" class="logo">
                 <!-- mini logo for sidebar mini 50x50 pixels -->
                 <span class="logo-mini"><b>A</b>DM</span>
                 <!-- logo for regular state and mobile devices -->
-                <span class="logo-lg"><b>Admin</b>P2TP2A</span>
+                <span class="logo-lg"><b>P2TP2A</b>Pekanbaru</span>
             </a>
 
             <!-- Header Navbar -->
@@ -43,56 +43,121 @@ include '../config/config.php';
                     <span class="sr-only">Toggle navigation</span>
                 </a>
             </nav>
-            
+
         </header>
-              <!-- Left side column. contains the logo and sidebar -->
-      <aside class="main-sidebar">
+        <!-- Left side column. contains the logo and sidebar -->
+        <aside class="main-sidebar">
 
-        <!-- sidebar: style can be found in sidebar.less -->
-        <section class="sidebar">
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar">
 
-          <!-- Sidebar user panel (optional) -->
-          <div class="user-panel">
-            <div class="pull-left image">
-              <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-            </div>
-            <div class="pull-left info">
-              <p>Hallo, Admin!</p>
-              <!-- Status -->
-              <!--<a href="#"><i class="fa fa-circle text-success"></i> Online</a>-->
-            </div>
-          </div>
+                <!-- Sidebar user panel (optional) -->
+                <div class="user-panel">
+                    <div class="pull-left image">
+                        <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                    </div>
+                    <div class="pull-left info">
+                        <p>Hallo, Admin!</p>
+                        <!-- Status -->
+                        <!--<a href="#"><i class="fa fa-circle text-success"></i> Online</a>-->
+                    </div>
+                </div>
 
-          <!-- search form (Optional)
-          <form action="#" method="get" class="sidebar-form">
-            <div class="input-group">
-              <input type="text" name="q" class="form-control" placeholder="Search...">
-              <span class="input-group-btn">
-                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i></button>
-              </span>
-            </div>
-          </form>
-          <!-- /.search form -->
-          `<form action="" method="get">
-          <!-- Sidebar Menu -->
-          <ul class="sidebar-menu">
-<!--            <li class="header">HEADER</li>-->
-            <!-- Optionally, you can add icons to the links -->
-            <li class="active"><a href=""><i class="fa fa-ambulance"></i> <span>Lihat Pegawai</span></a></li>
-            <li><a href="?page=kasus"><i class="fa fa-android"></i> <span>Isi Data Kasus</span></a></li>
-            <li class="treeview">
-              <a href="#"><i class="fa fa-dashboard"></i> <span>Multilevel</span> <i class="fa fa-angle-left pull-right"></i></a>
-              <ul class="treeview-menu">
-                <li><a href="#">Link in level 2</a></li>
-                <li><a href="#">Link in level 2</a></li>
-              </ul>
-            </li>
-          </ul><!-- /.sidebar-menu -->
-          </form>
-        </section>
-        <!-- /.sidebar -->
-      </aside>
+                <!-- search form (Optional)
+                <form action="#" method="get" class="sidebar-form">
+                  <div class="input-group">
+                    <input type="text" name="q" class="form-control" placeholder="Search...">
+                    <span class="input-group-btn">
+                      <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i></button>
+                    </span>
+                  </div>
+                </form>
+                <!-- /.search form -->
+                `<form action="" method="get">
+                    <!-- Sidebar Menu -->
+                    <ul class="sidebar-menu">
+                        <!--            <li class="header">HEADER</li>-->
+                        <!-- Optionally, you can add icons to the links -->
+                        <li><a href="?page=beranda"><i class="fa fa-home"></i> <span>Beranda</span></a></li>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-user"></i> <span>Pegawai</span><i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="?form=pegawai">Isi data pegawai</a></li>
+                                <li><a href="?page=pegawai">Lihat daftar pegawai</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="?page=kasus"><i class="fa fa-android"></i> <span>Isi Data Kasus</span></a></li>
+                        <li class="treeview">
+                            <a href="#"><i class="fa fa-dashboard"></i> <span>Multilevel</span> <i class="fa fa-angle-left pull-right"></i></a>
+                            <ul class="treeview-menu">
+                                <li><a href="#">Link in level 2</a></li>
+                                <li><a href="#">Link in level 2</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="?page=log-out"><i class="fa fa-android"></i> <span>Logout</span></a></li>
 
+                    </ul><!-- /.sidebar-menu -->
+                </form>
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+                <h1>
+                    <?php
+                    switch (@$_GET['page']) {
+                        case "kasus" :
+                            echo 'Isi data kasus';
+                            break;
+                        case "pegawai" :
+                            echo 'Daftar pegawai';
+                            break;
+                    }
+                    switch (@$_GET['form']){
+                        case "pegawai" :
+                            echo 'Isi data pegawai';
+                            break;
+                    }
+                    ?>
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+                    <li><a href="#">Examples</a></li>
+                    <li class="active">Blank page</li>
+                </ol>
+            </section>
+
+            <!-- Main content -->
+            <section class="content">
+                <?php
+                switch (@$_GET['page']) {
+                    case "kasus" :
+                        include '../page/form/kasus.php';
+                        break;
+                    case "pegawai" :
+                        include '../page/view/pegawai.php';
+                        break;
+                    case "beranda" :
+                        include '';
+                        break;
+                    case "log-out" :
+                        header("Location:../index.php");
+                        break;
+                }
+                switch (@$_GET['form']){
+                        case "pegawai" :
+                            include '../page/form/pegawai.php';
+                            break;
+                    }
+                ?>
+
+            </section><!-- /.content -->
+        </div><!-- /.content-wrapper -->
         <!-- REQUIRED JS SCRIPTS -->
 
         <!-- jQuery 2.1.4 -->
@@ -106,10 +171,3 @@ include '../config/config.php';
     </body>
 
 </html>
-<?php
-switch(@$_GET['page']){
-    case "kasus" : 
-        include '../page/form/kasus.php';
-        break;
-}
-?>

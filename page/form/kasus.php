@@ -91,8 +91,28 @@ $pendidikan = array("Tidak ada", "SD", "SMP", "SMA", "S1", "S2", "S3");
                     <input type="text" name="tpt_lahir" placeholder="Tempat Lahir">
                     <input type="date" name="tgl_lahir">
                     <input type="text" name="alamat" placeholder="Alamat">
-                    <input type="text" name="pdk" placeholder="Pendidikan"> 
-                    <input type="text" name="agama" placeholder="Agama">
+                    <select name="pdk">
+                        <?php
+                        foreach ($pendidikan as $p) {
+                            ?>
+                            <option value="<?php echo $p; ?>">
+                                <?php echo $p; ?>
+                            </option>
+                            <?php
+                        }
+                        ?>
+                    </select>
+                    <select name="pdk">
+                        <?php
+                        foreach ($agama as $a) {
+                            ?>
+                            <option value="<?php echo $a; ?>">
+                                <?php echo $a; ?>
+                            </option>
+                            <?php
+                        }
+                        ?>
+                    </select>
                     <input type="text" name="kerja" placeholder="Pekerjaan">
                     <input type="text" name="status" placeholder="Status">        
                     <input type="text" name="hubungan" placeholder="Hubungan dengan Korban">        
