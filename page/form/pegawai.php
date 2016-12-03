@@ -1,8 +1,8 @@
 <?php
 //define('BASEPATH',true);
 if(!defined('BASEPATH')) exit("No direct scripts are allowed");
-require_once '../config/config.php';
-require_once '../core/insert.php';
+require_once '../../config/config.php';
+require_once '../../core/insert.php';
 ?>
 
 <html>

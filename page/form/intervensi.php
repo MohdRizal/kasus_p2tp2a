@@ -1,8 +1,6 @@
 <?php
+if(!define('BASEPATH', true)) exit("No direct scripts allowed");
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+include '../../config/config.php';
+
 

@@ -3,12 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/kasus/page/form/pegawai.php</file>
+            <file>file:/C:/xampp/htdocs/kasus/user/pimpinan.php</file>
+            <file>file:/C:/xampp/htdocs/kasus/user/ngadimin.php</file>
             <file>file:/C:/xampp/htdocs/kasus/core/insert.php</file>
-            <file>file:/C:/xampp/htdocs/kasus/core/retrieve.php</file>
+            <file>file:/C:/xampp/htdocs/kasus/page/login.php</file>
             <file>file:/C:/xampp/htdocs/kasus/index.php</file>
-            <file>file:/C:/xampp/htdocs/kasus/page/form/operator.php</file>
-            <file>file:/C:/xampp/htdocs/kasus/page/view/pegawai.php</file>
         </group>
     </open-files>
 </project-private>

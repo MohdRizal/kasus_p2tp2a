@@ -1,3 +1,8 @@
+<?php
+define('BASEPATH',true);
+include '../../config/config.php';
+require '../.../core/insert.php';
+?>
 <h2>Form Surat Tugas</h2>
 <!--Data Kasus-->
 <form id="msform">

@@ -1,8 +1,8 @@
 <?php
 if (!defined('BASEPATH'))
     exit("No direct scripts allowed");
-include '../config/config.php';
-include '../core/insert.php';
+include '../../config/config.php';
+include '../../core/insert.php';
 
 $agama = array("Islam", "Katolik", "Protestan", "Buddha", "Hindu", "Konghuchu");
 $pendidikan = array("Tidak ada", "SD", "SMP", "SMA", "S1", "S2", "S3");
