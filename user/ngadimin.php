@@ -95,7 +95,7 @@ include '../core/retrieve.php';
                                 <i class="fa fa-user"></i> <span>Kasus</span><i class="fa fa-angle-left pull-right"></i>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="?form=pegawai">Isi data kasus</a></li>
+                                <li><a href="?form=kasus">Isi data kasus</a></li>
                                 <li><a href="?view=kasus">Lihat data kasus</a></li>
                                 <li><a href="?view=korban">Lihat daftar korban</a></li>
                                 <li><a href="?view=pelaku">Lihat daftar pelaku</a></li>
@@ -177,10 +177,14 @@ include '../core/retrieve.php';
                 switch (@$_GET['view']){
                         case "pelapor" :
                             include '../page/view/pelapor.php';
+                            break;
                     }
                 switch (@$_GET['form']){
                         case "pegawai" :
                             include '../page/form/pegawai.php';
+                            break;
+                        case "kasus" :
+                            include '../page/form/kasus.php';
                             break;
                     }
                 ?>
