@@ -1,5 +1,3 @@
 <?php
-define('BASEPATH',true);
-include '../../config/config.php';
-include '../../core/retrieve.php';
+if(!defined("BASEPATH")) exit ("No direct scripts are allowed");
 

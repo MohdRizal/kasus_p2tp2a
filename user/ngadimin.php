@@ -1,6 +1,8 @@
 <?php
 define('BASEPATH', true);
 include '../config/config.php';
+include '../core/insert.php';
+include '../core/retrieve.php';
 ?>
 <html>
     <head>

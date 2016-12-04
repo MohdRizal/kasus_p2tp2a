@@ -1,7 +1,5 @@
 <?php
-define('BASEPATH',true);
-include '../../config/config.php';
-require '../.../core/insert.php';
+if(!defined('BASEPATH')) exit("No direct scripts are allowed");
 ?>
 <h2>Form Surat Tugas</h2>
 <!--Data Kasus-->

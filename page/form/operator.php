@@ -1,8 +1,5 @@
 <?php
-define('BASEPATH',true);
-
-include '../../config/config.php';
-include '../../core/insert.php';
+if(!defined('BASEPATH')) exit("No direct scripts are allowed");
 
 $level = array('pimpinan','admin');
 ?>

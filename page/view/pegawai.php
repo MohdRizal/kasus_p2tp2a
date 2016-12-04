@@ -1,8 +1,6 @@
 <!DOCTYPE HTML>
 <?php
-//if(!defined("BASEPATH")) exit ("No direct scripts are allowed");
-define('BASEPATH',true);
-include '../core/retrieve.php';
+if(!defined("BASEPATH")) exit ("No direct scripts are allowed");
 
 $hasil = get_all("pegawai");
 $hasil->setFetchMode(PDO::FETCH_OBJ);
