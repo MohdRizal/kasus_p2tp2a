@@ -39,7 +39,7 @@
 				<li><a data-scroll href="#home">Beranda</a></li>
 				<li><a data-scroll href="#services">Laporkan Kasus Anda</a></li>
 				<li><a data-scroll href="#portfolio">Tentang Kami</a></li>
-				<li><a href="?page=login">Login</a></li>
+				<li><a href="?page=login.php">Login</a></li>
 			</ul>
                         			<ul class="social-icons">
                             <li><img src="style/img/logoo.png" height="50" width="50"></li>
@@ -49,7 +49,7 @@
 			<div class="header-info">
 				<h1>P2TP2A</h1>
                                 <h2>Kota Pekanbaru</h2>
-                                <a href="page/login.php" class="btn btn-success">Get in Touche</a>
+                                <a href="page/login" class="btn btn-success">Get in Touche</a>
 			</div>
 		</div>
 	</div>
