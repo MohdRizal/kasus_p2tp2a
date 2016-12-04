@@ -39,7 +39,7 @@
 				<li><a data-scroll href="#home">Beranda</a></li>
 				<li><a data-scroll href="#services">Laporkan Kasus Anda</a></li>
 				<li><a data-scroll href="#portfolio">Tentang Kami</a></li>
-				<li><a href="?page=login.php">Login</a></li>
+				<li><a href="?page=login">Login</a></li>
 			</ul>
                         			<ul class="social-icons">
                             <li><img src="style/img/logoo.png" height="50" width="50"></li>

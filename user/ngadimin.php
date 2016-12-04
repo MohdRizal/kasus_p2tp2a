@@ -90,12 +90,28 @@ include '../core/retrieve.php';
                                 <li><a href="?page=pegawai">Lihat daftar pegawai</a></li>
                             </ul>
                         </li>
-                        <li><a href="?page=kasus"><i class="fa fa-android"></i> <span>Isi Data Kasus</span></a></li>
                         <li class="treeview">
-                            <a href="#"><i class="fa fa-dashboard"></i> <span>Multilevel</span> <i class="fa fa-angle-left pull-right"></i></a>
+                            <a href="#">
+                                <i class="fa fa-user"></i> <span>Kasus</span><i class="fa fa-angle-left pull-right"></i>
+                            </a>
                             <ul class="treeview-menu">
-                                <li><a href="#">Link in level 2</a></li>
-                                <li><a href="#">Link in level 2</a></li>
+                                <li><a href="?form=pegawai">Isi data kasus</a></li>
+                                <li><a href="?view=kasus">Lihat data kasus</a></li>
+                                <li><a href="?view=korban">Lihat daftar korban</a></li>
+                                <li><a href="?view=pelaku">Lihat daftar pelaku</a></li>
+                                <li><a href="?view=pelapor">Lihat data pelapor</a></li>
+                            </ul>
+                        </li>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-user"></i> <span>Kasus</span><i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="?form=pegawai">Isi data kasus</a></li>
+                                <li><a href="?view=kasus">Lihat data kasus</a></li>
+                                <li><a href="?view=korban">Lihat daftar korban</a></li>
+                                <li><a href="?view=pelaku">Lihat daftar pelaku</a></li>
+                                <li><a href="?view=pelapor">Lihat data pelapor</a></li>
                             </ul>
                         </li>
                         <li><a href="?page=log-out"><i class="fa fa-android"></i> <span>Logout</span></a></li>
@@ -120,6 +136,10 @@ include '../core/retrieve.php';
                             echo 'Daftar pegawai';
                             break;
                     }
+//                    switch (@$_GET['view']){
+//                        case "pelapor" :
+//                            include '../page/view/pelapor.php';
+//                    }
                     switch (@$_GET['form']){
                         case "pegawai" :
                             echo 'Isi data pegawai';
@@ -139,7 +159,7 @@ include '../core/retrieve.php';
                 <?php
                 switch (@$_GET['page']) {
                     case "kasus" :
-                        include '../page/form/kasus.php';
+                        include '../page/view/jenis_kasus.php';
                         break;
                     case "pegawai" :
                         include '../page/view/pegawai.php';
@@ -147,10 +167,17 @@ include '../core/retrieve.php';
                     case "beranda" :
                         include '';
                         break;
+                    case "intervensi" :
+                        include '../page/form/intervensi.php';
+                        break;
                     case "log-out" :
                         header("Location:../index.php");
                         break;
                 }
+                switch (@$_GET['view']){
+                        case "pelapor" :
+                            include '../page/view/pelapor.php';
+                    }
                 switch (@$_GET['form']){
                         case "pegawai" :
                             include '../page/form/pegawai.php';

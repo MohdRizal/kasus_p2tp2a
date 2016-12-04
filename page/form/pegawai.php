@@ -1,56 +1,23 @@
 <?php
 //define('BASEPATH',true);
 if(!defined('BASEPATH')) exit("No direct scripts are allowed");
-
 ?>
-
-<html>
-    <head>
-        <title>
-            Input Data Pegawai
-        </title>
-    </head>
-    <body>
-        <form action="" method="post">
-            
-            <table>
-                <tr>
-                    <td>ID Pegawai : </td>
-                    <td><input type="text" name="id_peg" required></td>
-                </tr>
-                <tr>
-                    <td>Nama : </td>
-                    <td><input type="text" name="nama"></td>
-                </tr>
-                <tr>
-                    <td>Alamat : </td>
-                    <td><input type="text" name="alamat"></td>
-                </tr>
-                <tr>
-                    <td>Tempat Lahir : </td>
-                    <td><input type="text" name="tpt_lahir"></td>
-                </tr>
-                <tr>
-                    <td>Tanggal Lahir : </td>
-                    <td><input type="date" name="tgl_lahir"></td>
-                </tr>
-                <tr>
-                    <td>No Telepon / Hp : </td>
-                    <td><input type="text" name="hp"></td>
-                </tr>
-                <tr>
-                    <td>Status : </td>
-                    <td><input type="text" name="status"></td>
-                </tr>
-   
-            </table>
-            
-            <input type="submit" name="submit" value="KIRIM">
-            
-        </form>
-    </body>
-</html>
-
+<form id="msform" action="" method="post">
+    <ul id="progressbar">
+        <li>Tambah Data Pegawai</li>
+    </ul>
+    <fieldset>
+        <h2 class="fs-title">Pegawai</h2>
+        <input type="text" name="id" placeholder="ID Pegawai">
+        <input type="text" name="nama" placeholder="Nama Lengkap">
+        <input type="text" name="alamat" placeholder="Alamat">
+        <input type="text" name="tempat" placeholder="Tempat Lahir">
+        <input type="text" name="tgl" placeholder="Tanggal Lahir">
+        <input type="text" name="hp" placeholder="No. Telepon / HP">
+        <input type="text" name="stat" placeholder="Status">
+        <input type="submit" name="submit" class="next" value="SIMPAN" onclick="selesai();">
+    </fieldset>
+</form>
 <?php
 
     if(@$_POST['submit']){
